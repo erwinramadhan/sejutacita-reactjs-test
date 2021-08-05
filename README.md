@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Dokumentasi Frontend React.js Technical Test at SejutaCita
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello & selamat datang di repository Frontend React.js Technical Test at SejutaCita. Dokumentasi ini berisikan guide & detail-detail project.
 
-## Available Scripts
+# Getting Started
+## Cloning  Project
 
-In the project directory, you can run:
+Lakukan command: 
 
-### `yarn start`
+`git clone https://github.com/erwinramadhan/sejutacita-reactjs-test.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Untuk cloning project dan otomatis akan membuat folder `sejutacita-reactjs-test` di lokal masing-masing, kemudian pindah ke directory folder tersebut lalu jalankan:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`code .`
 
-### `yarn test`
+untuk membuka code editor pada working directory tersebut.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dependencies Installation
 
-### `yarn build`
+Gunakan command: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`yarn`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+pada working directory untuk menginstall semua dependencies apabila sudah di clone.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Gunakan command: 
 
-### `yarn eject`
+`yarn start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Untuk memulai server.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## CORS ISSUES
+karena API yang diconsume dari line today memiliki CORS policy maka perlu untuk menginstall sebuah plugin browser bernama `Moesif Origin & CORS Changer` plugin tersebut dapat didownload diweb resmi plugin chrome atau firefox berikut link pluginnya:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`Chrome` : `https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc`
+`Firefox` : `https://addons.mozilla.org/en-US/firefox/addon/moesif-origin-cors-changer1/`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+setelah mendownload plugin selesai sekarang bisa mengaktifkan plugin tersebut.
+Jika plugin sudah aktif maka Server Localhost yang dijalankan akan dapat mengeget API yang disediakan oleh LineToday.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tech Stacks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+List libraries yang digunakan:
+- React (Main frontend UI library)
+- Bootsrap (CSS Framework)
+- CSS Module (CSS as module import)
+- React Router (Single Page Application (SPA) Routing)
+- Redux (State Management Library)
+- Redux Thunk (Asynchronous Action handling middleware)
+- React Testing Library (Unit testing library for react)
+- Lodash (Provider utility functions library for common programming task)
+- Sass (CSS Preprocessors)
+- Axios (Promise based HTTP client for the browser & node.js)
+- Redux Devtools Extension (DevTools for Redux)
