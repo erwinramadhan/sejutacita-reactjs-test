@@ -1,0 +1,20 @@
+@use '../../../assets/scss/main.scss' as *;
+
+
+.categoryItem {
+  text-decoration: none;
+  color: #B7B7B7;
+  font-weight: 500;
+  &:hover {
+    color: #111111;
+    font-weight: 600;
+  }
+  &:focus {
+    color: #111111;
+    font-weight: 600;
+  }
+}
+
+.selected {
+  color: #111111;
+}

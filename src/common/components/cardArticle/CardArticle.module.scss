@@ -1,0 +1,72 @@
+@use '../../../assets/scss/main.scss' as *;
+
+.listCard {
+  flex: 0 0 45%;
+}
+
+.card {
+  width: 21rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: none;
+  min-height: 21rem;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border: 1px solid $color-background-base-underlayer;
+  &:hover {
+    border: 1px solid $color-primary;
+  }
+  &Img{
+    margin: 1.25rem;
+    margin-bottom: 0;
+    width: 18.5rem;
+    height: 10rem;
+    border-radius: 0.625rem;
+  }
+  &Title {
+    font-size: 15px;
+  }
+  &Subtitle {
+    font-size: 12px;
+  }
+  &Btn {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    border-radius: 0;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    &:active {
+      background-color: darken($color-primary, 4%);
+      border-color: darken($color-primary, 4%);
+    }
+    &:hover {
+      background-color: darken($color-primary, 4%);
+      border-color: darken($color-primary, 4%);
+    }
+    &:focus {
+      background-color: darken($color-primary, 4%);
+      border-color: darken($color-primary, 4%);
+      box-shadow: none;
+    }
+  }
+  &RemoveBtn {
+    background-color: $color-red;
+    border-color: $color-red;
+    border-radius: 0;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    &:active {
+      background-color: darken($color-red, 10%);
+      border-color: darken($color-red, 10%);
+    }
+    &:hover {
+      background-color: darken($color-red, 10%);
+      border-color: darken($color-red, 10%);
+    }
+    &:focus {
+      background-color: darken($color-red, 10%);
+      border-color: darken($color-red, 10%);
+      box-shadow: none;
+    }
+  }
+}

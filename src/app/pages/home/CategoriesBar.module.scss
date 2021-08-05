@@ -1,0 +1,16 @@
+@use '../../../assets/scss/main.scss' as *;
+
+.categoriesBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #0000;
+  }
+}

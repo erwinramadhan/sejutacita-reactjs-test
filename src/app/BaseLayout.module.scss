@@ -1,0 +1,11 @@
+@use '../assets/scss/main.scss' as *;
+
+.universalFrame {
+  background-color: $color-background-base-underlayer;
+  .universalContainer {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: $color-background-base-body;
+    min-height: calc(100vh - 110px);
+  }
+}
