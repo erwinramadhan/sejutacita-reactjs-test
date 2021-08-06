@@ -1,0 +1,36 @@
+.carouselItem {
+  padding: 0 24px;
+  margin-top: 24px;
+  .carouselImage {
+    width: 100%;
+    display: block;
+    max-height: 360px;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .carouselCaption {
+    border-radius: 25px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .carouselItem {
+    .carouselImage {
+      width: 100%;
+      display: block;
+      height: 277px;
+      background-size: cover;
+      border-radius: 25px;
+    }
+    .carouselCaption {
+      &Title {
+        font-size: 18px;
+      }
+      &Publisher {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+  }
+}

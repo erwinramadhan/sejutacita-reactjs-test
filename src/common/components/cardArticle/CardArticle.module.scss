@@ -5,21 +5,21 @@
 }
 
 .card {
-  width: 21rem;
+  width: 21.5rem;
   border-radius: 1.25rem;
   overflow: hidden;
   border: none;
   min-height: 21rem;
   justify-content: space-between;
-  margin-bottom: 25px;
-  border: 1px solid $color-background-base-underlayer;
+  margin-bottom: 27px;
+  border: 1px solid $color-background-base-body;
   &:hover {
     border: 1px solid $color-primary;
   }
   &Img{
     margin: 1.25rem;
     margin-bottom: 0;
-    width: 18.5rem;
+    width: 19rem;
     height: 10rem;
     border-radius: 0.625rem;
   }
@@ -67,6 +67,61 @@
       background-color: darken($color-red, 10%);
       border-color: darken($color-red, 10%);
       box-shadow: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .listCard {
+    flex: 0 0 42%;
+  }
+  .card {
+    width: 180px;
+    min-height: 20rem;
+    &Img {
+      margin: 0;
+      border-radius: 0;
+      width: 180px;
+      height: 107px;
+    }
+    &Body {
+      padding: 6px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .listCard {
+    flex: 0 0 100%;
+  }
+  .card {
+    width: 100%;
+    min-height: 16.5rem;
+    &Img {
+      margin: 1rem;
+      margin-bottom: 0;
+      border-radius: 0.625rem;
+      width: 90%;
+      height: 140px;
+    }
+    &Body {
+      padding: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .listCard {
+    flex: 0 0 100%;
+  }
+  .card {
+    width: 100%;
+    min-height: 16.5rem;
+    &Img {
+      margin: 0;
+      border-radius: 0;
+      width: 100%;
+      height: 120px;
     }
   }
 }

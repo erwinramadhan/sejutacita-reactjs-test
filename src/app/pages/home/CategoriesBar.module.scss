@@ -1,5 +1,21 @@
 @use '../../../assets/scss/main.scss' as *;
 
+.containerCategoriesBar {
+  background-color: #ffff;
+  margin: 0 24px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.categoriesTitleBar {
+  margin: 0 6px;
+}
+
+.titleBar {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .categoriesBar {
   display: flex;
   flex-wrap: wrap;

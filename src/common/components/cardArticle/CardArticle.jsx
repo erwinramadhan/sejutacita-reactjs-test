@@ -8,7 +8,7 @@ const CardArticle = ({ title, publisher, url, thumbnailHash, dataBookmark, addBo
       <Card className={styles.card}>
         <a href={url}>
           <Card.Img className={styles.cardImg} variant="top" src={`https://obs.line-scdn.net/${thumbnailHash}`} />
-          <Card.Body>
+          <Card.Body className={styles.cardBody}>
             <Card.Title className={styles.cardTitle}>{title}</Card.Title>
             <Card.Text className={styles.cardSubtitle}>
               {publisher}

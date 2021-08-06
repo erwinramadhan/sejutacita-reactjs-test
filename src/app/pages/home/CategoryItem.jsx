@@ -15,7 +15,7 @@ const CategoryItem = ({ name }) => {
       }} 
       activeClassName={styles.selected}
       className={navLinkClassName}
-      to={`/${name.toLowerCase()}`}>
+      to={`/${name.replace(/\s+/g, '-').toLowerCase()}`}>
      {name}
     </NavLink>
   )

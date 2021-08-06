@@ -1,4 +1,5 @@
 import { Button } from 'react-bootstrap';
+import { FaRegBookmark } from 'react-icons/fa';
 
 import { ReactComponent as LineToday } from '../../../assets/img/brand-logo-today-solid.svg';
 
@@ -9,7 +10,10 @@ const TitleBar = ({ onClickLogo, onClickBookmarkList }) => {
     <div className={styles.titlebar}>
       <LineToday className={styles.titlebarBtn} onClick={onClickLogo}/>
       <div className={styles.titlebarLogin}>
-        <Button className={styles.primaryBtn} onClick={onClickBookmarkList} data-testid="bookmarkListBtn">Bookmark List</Button>
+        <Button className={styles.primaryBtn} onClick={onClickBookmarkList} data-testid="bookmarkListBtn">
+          Bookmark List
+          <FaRegBookmark size="15px" className={styles.icon}/>
+        </Button>
       </div>
     </div>
   )

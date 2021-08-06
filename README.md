@@ -53,3 +53,4 @@ List libraries yang digunakan:
 - Sass (CSS Preprocessors)
 - Axios (Promise based HTTP client for the browser & node.js)
 - Redux Devtools Extension (DevTools for Redux)
+- React Icons

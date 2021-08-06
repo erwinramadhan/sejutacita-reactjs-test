@@ -13,8 +13,13 @@ const CategoriesBar = () => {
   const renderedCategoriesItem = articleFetchStatus === 'fulfilled' ? categoryList.map((category) => ( <CategoryItem key={category.id} name={category.name}/> )) : '';
 
   return (
+    <div className={styles.containerCategoriesBar}>
+    <div className={styles.categoriesTitleBar} >
+      <h5 className={styles.titleBar}>Category</h5>
+    </div>
     <div className={styles.categoriesBar}>
       {renderedCategoriesItem}
+    </div>
     </div>
   )
 }
